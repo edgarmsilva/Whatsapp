@@ -55,3 +55,8 @@
 #     end
 #   end
   
+
+     # visit "https://wa.me/5581971059976?text=Teste%20Automação..."
+        # find('#action-button').click
+        # page.has_selector?('._35EW6')
+        # find('._35EW6').click

@@ -2,9 +2,8 @@ require 'capybara'
 require 'capybara/cucumber'
 require 'rspec'
 require 'rubygems'
-# require 'test/unit'
-# require 'capybara/rspec'
-# require 'cucumber/rails'
+require 'test/unit'
+require 'capybara/rspec'
 require 'selenium/webdriver'
 
 Capybara.configure do |config|

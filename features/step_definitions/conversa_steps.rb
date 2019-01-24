@@ -1,5 +1,6 @@
 Dado("que estou logado no Whatsapp Web") do
     @logado = @whatsapp.acessarPagina
+    sleep 1
     expect(@logado.text).to eql "Mantenha seu telefone conectado"
 end
   
@@ -17,7 +18,7 @@ Quando("seleciono uma conversa já existente") do
 end
 
 Quando("enviei mensagem para uma pessoa") do
-@mensagem = "mensagem a ser apagada11...."
+@mensagem = "mensagem a ser apagada...."
 
   @whatsapp.enviaMensagemPessoa(@mensagem)
 end

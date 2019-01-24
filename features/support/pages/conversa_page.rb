@@ -1,4 +1,6 @@
 class Whatsapp
+    include Capybara::DSL
+    
     def acessarPagina
         visit 'http://web.whatsapp.com'
         return find('.iHhHL')
@@ -22,7 +24,6 @@ class Whatsapp
     end
 
     def enviaMensagemPessoa(texto)
-        
         find('._3j7s9 span[title="Renata"]').click
         find('._2S1VP.copyable-text.selectable-text').set texto
         find('._35EW6').click
